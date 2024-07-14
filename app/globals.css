@@ -2,26 +2,126 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.active{
+  color: hsl(220, 98%, 61%);
+}
+.lightbg {
+  background-image: url("/img/bg-desktop-light.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+}
+.cross{
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.delete:hover .cross{
+  display: flex;
+}
+.darkbg {
+  background-image: url("/img/bg-desktop-dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+}
+.bglinear {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20px;
+}
+/* input[type="checkbox"] {
+  width: 20px;                         
+  height: 20px;                        
+  border-radius: 50%;
+  appearance: none;
+-webkit-appearance: none;
+} */
+.checkbox1 {
+  color: #c3c3c3;
+  border-color: hsl(234, 11%, 52%);
+}
+.checkbox2 {
+  color: #c3c3c3;
+  border-color: hsl(234, 11%, 52%);
+}
+.checkbox1:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background:
+        linear-gradient( hsl(0, 0%, 98%), hsl(0, 0%, 98%)) padding-box,
+        linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+}
+.checkbox2:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background:
+        linear-gradient( hsl(235, 24%, 19%), hsl(235, 24%, 19%)) padding-box,
+        linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+}
+.clicked {
+  background-image: url("/img/icon-check.svg"),
+    linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.clicked:hover {
+  background-image: url("/img/icon-check.svg"),
+    linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.td1 {
+  text-decoration: line-through;
+  color: hsl(235, 19%, 35%);
+}
+.td2 {
+  text-decoration: line-through;
+  color: hsl(233, 11%, 84%);
+}
+
+
+
+@media only screen and (max-width: 1020px) {
+  .cross{
+    display: flex;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hiddenicon {
+  display: none;
+}
+.flexicon {
+  display: flex;
+}
+@media only screen and (max-width: 430px) {
+  .lightbg {
+    background-image: url("/img/bg-mobile-light.jpg");
+    height: 200px;
+  }
+  .darkbg {
+    background-image: url("/img/bg-mobile-dark.jpg");
+    height: 200px;
+  }
+}
+
+.hiddenicon {
+  display: none;
+}
+.flexicon {
+  display: flex;
 }
