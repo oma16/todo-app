@@ -212,7 +212,7 @@ const Todo = () => {
             />
           </div>
         </div>
-        <div className="mt-5 relative">
+        <div className="mt-6 relative">
           <input
             type="text"
             placeholder="Create a new todo..."
@@ -221,11 +221,11 @@ const Todo = () => {
             onKeyDown={handleKeyPress}
             className={
               mode === "light"
-                ? " bg-gray-50 flex flex-row w-full lg:w-3/4 xl:w-1/2 h-12 focus:outline-0 shadow-lg rounded-lg mx-auto placeholder:text-gray-200 pl-12"
-                : " bg-gray-800 flex flex-row w-full lg:w-3/4 xl:w-1/2 h-12 focus:outline-0 shadow-lg rounded-lg mx-auto placeholder:text-gray-850 pl-12"
+                ? " bg-gray-50 flex flex-row w-full lg:w-3/4 xl:w-1/2 h-14 focus:outline-0 shadow-lg rounded-lg mx-auto placeholder:text-gray-200 pl-12"
+                : " bg-gray-800 flex flex-row w-full lg:w-3/4 xl:w-1/2 h-14 focus:outline-0 shadow-lg rounded-lg mx-auto placeholder:text-gray-850 pl-12"
             }
           />
-          <div className=" h-5 w-5 rounded-full border border-gray-850 absolute top-3 left-4  lg:left-[102px] xl:left-[255px]"></div>
+          <div className=" h-5 w-5 rounded-full border border-gray-850 absolute top-4 left-4  lg:left-[14%]  xl:left-[26.5%]"></div>
         </div>
       </div>
       <div className=" px-5 md:px-40  flex flex-col text-base justify-center relative bottom-6 md:bottom-10">
@@ -248,7 +248,7 @@ const Todo = () => {
           />
 
           <div
-            className={`flex flex-row w-full justify-between h-12 shadow-lg  rounded-bl-lg rounded-br-lg  mx-auto px-4
+            className={`flex flex-row w-full justify-between h-14 shadow-lg  rounded-bl-lg rounded-br-lg  mx-auto px-4
               ${
                 mode === "light"
                   ? " bg-gray-50  text-gray-200"

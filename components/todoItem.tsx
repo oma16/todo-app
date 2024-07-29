@@ -59,7 +59,7 @@ const TodoItem = ({
             onDragEnter={() => (draggedOverTodo.current = index)}
             onDragEnd={handleTodoSort}
             onDragOver={(e) => e.preventDefault()}
-            className={`flex flex-row justify-between text-sm md:text-base items-center w-full h-min py-3 shadow-lg  mx-auto px-4 first:rounded-tl-lg first:rounded-tr-lg border-b delete  hover:cursor-pointer
+            className={`flex flex-row justify-between text-sm md:text-base items-center w-full h-min py-4 shadow-lg  mx-auto px-4 first:rounded-tl-lg first:rounded-tr-lg border-b delete  hover:cursor-pointer
               ${
                 mode === "light"
                   ? " bg-gray-50  border-b-gray-200 "
