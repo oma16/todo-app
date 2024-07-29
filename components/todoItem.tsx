@@ -105,7 +105,6 @@ const TodoItem = ({
               <Image
                 src={cross}
                 alt={cross}
-                priority
                 onClick={() => handleSingleDelete(todo?.id)}
                 className="cursor-pointer"
               />

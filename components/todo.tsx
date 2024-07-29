@@ -201,14 +201,12 @@ const Todo = () => {
             <Image
               src={moon}
               alt={moon}
-              priority
               onClick={toggleMode}
               className={mode === "light" ? "flex" : "hidden"}
             />
             <Image
               src={sun}
               alt={sun}
-              priority
               onClick={toggleMode}
               className={mode === "light" ? "hidden" : "flex"}
             />
