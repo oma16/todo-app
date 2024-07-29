@@ -34,7 +34,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile light](public/img/moblight.png)
+
+![Mobile dark](public/img/mobdark.png)
+
+![Desktop light](public/img/weblight.png)
+
+![Desktop dark](public/img/webdark.png)
 
 
 
