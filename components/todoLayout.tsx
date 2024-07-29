@@ -23,7 +23,7 @@ export default function TodoLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
 
   useEffect(() => {
     setMode(localStorage.getItem('theme') || mode)

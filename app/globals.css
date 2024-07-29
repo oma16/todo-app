@@ -40,13 +40,7 @@
   background-size: cover;
   height: 20px;
 }
-/* input[type="checkbox"] {
-  width: 20px;                         
-  height: 20px;                        
-  border-radius: 50%;
-  appearance: none;
--webkit-appearance: none;
-} */
+
 .checkbox1 {
   color: #c3c3c3;
   border-color: hsl(234, 11%, 52%);
