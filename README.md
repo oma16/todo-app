@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://todo-app-ruby-xi.vercel.app/)
-- Live Site URL: [Add live site URL here](https://github.com/oma16/todo-app)
+- Solution URL: [https://todo-app-ruby-xi.vercel.app/](https://todo-app-ruby-xi.vercel.app/)
+- Live Site URL: [https://github.com/oma16/todo-app](https://github.com/oma16/todo-app)
 
 ## My process
 
